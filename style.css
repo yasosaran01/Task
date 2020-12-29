@@ -1,0 +1,108 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    width:500px;
+    margin:20px auto;
+    height:600px;
+    position:relative;
+    overflow:hidden;
+   
+}
+.bkground{
+    position: absolute;
+    width:100%;
+    height:2000px;
+    background-image:url("https://image.freepik.com/free-vector/cloud-sky-beautiful-cartoon-background-night-sky-with-colorful-clouds-flat_153791-5.jpg");
+    background-size:cover;
+    bottom:0;
+     transition:1s;
+}
+.qBoard{
+    position: absolute;
+    width:100%;
+    height:100%;
+   
+}
+.hotairballoon{
+    position: absolute;
+    width:130px;
+    height:130px;
+ 
+    background-image:url("hotairbaloon.png");
+    background-size:100% 100%;
+
+    top:10px;
+    left:40px;
+    transition:0.5s;
+}
+.questions{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.box{
+    width:200px;
+    padding:10px;
+    text-align:center;
+    font-family:sans-serif;
+    font-size:20px;
+    background-color:rgba(67, 56, 79,0.8);
+    color:white;
+}
+.question{
+    background-color:transparent;
+    font-weight:bolder;
+    font-size:24px;
+}
+
+.overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(45,45,45,0.7);
+    z-index:12;
+    display: none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.overlay > div{
+    color:white;
+    text-align:center;
+    background-color:teal;
+    padding:10px;
+    transform:scale(1);
+    transition:1s;
+}
+.show{
+    display:flex;
+}
+.overlay .hide{
+    transform:scale(0);
+}
+.overlay h4{
+    background-color:orange;
+    color:white;
+    font-weight:bold;
+    padding:8px 10px;
+    width:125px;
+    border:none;
+    outline:none;
+    text-transform:uppercase;
+    border-radius:2px;
+    margin:auto;
+}
+
+.correct{
+    background-color:rgba(40,90,40,0.7)
+  }
+  .wrong{
+    background-color:rgba(230,40,40,0.7);
+  }
